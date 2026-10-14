@@ -1,0 +1,39 @@
+{
+  "schema_version": 2,
+  "scope": {
+    "artifact": "fidelity_points.csv",
+    "purpose": "compact table-level reproduction",
+    "note": "The current all-seed score bundle is described separately by score_bundle/score_bundle_manifest.json."
+  },
+  "inference_rule": {
+    "name": "one-sided Clopper-Pearson three-state verdict",
+    "version": "cp_one_sided_delta_v1",
+    "tail_convention": "one_sided",
+    "delta": 0.05,
+    "claim_alphas": [
+      0.01,
+      0.05
+    ],
+    "empirical_threshold_quantile": 0.95
+  },
+  "source_summary": {
+    "runs": 683,
+    "metric_cells": 2150,
+    "included_rows": 2118,
+    "datasets": [
+      "MVTec AD 2",
+      "MVTec AD",
+      "VisA"
+    ]
+  },
+  "files": {
+    "fidelity_points.csv": {
+      "sha256": "066d8ae072a45f2d52b3bdbdfb647237defabc4194bc81a476685454c1e8d240"
+    }
+  },
+  "companion_score_bundle": {
+    "manifest": "score_bundle/score_bundle_manifest.json",
+    "runs": 815,
+    "derived_metric_cells": 2414
+  }
+}

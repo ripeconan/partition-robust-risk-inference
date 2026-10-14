@@ -1,0 +1,13 @@
+mechanism,method,replicates,true_item_fpr,upper_coverage,certification_rate,violation_rate,unresolved_rate
+one-frame,verified-mapping,100000,0.06,0.97521,0.02479,0.06786,0.90735
+one-frame,correct-N-r,100000,0.06,0.97521,0.02479,0.0,0.97521
+one-frame,outer-N60-65-r6,100000,0.06,0.97521,0.02479,0.0,0.97521
+one-frame,cap-only-r5,100000,0.06,0.97521,0.02479,0.0,0.97521
+one-frame,wrong-N65-r5,100000,0.06,0.97521,0.02479,0.0,0.97521
+one-frame,frame-naive,100000,0.06,0.00015,0.99045,0.0,0.00955
+all-frames,verified-mapping,100000,0.06,0.97521,0.02479,0.06786,0.90735
+all-frames,correct-N-r,100000,0.06,0.97521,0.02479,0.06786,0.90735
+all-frames,outer-N60-65-r6,100000,0.06,0.97521,0.02479,0.02687,0.94834
+all-frames,cap-only-r5,100000,0.06,0.97521,0.02479,0.0,0.97521
+all-frames,wrong-N65-r5,100000,0.06,0.97521,0.02479,0.06786,0.90735
+all-frames,frame-naive,100000,0.06,0.70904,0.11767,0.29242,0.58991

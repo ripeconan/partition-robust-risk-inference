@@ -1,0 +1,4 @@
+model,seeds,fpr_certified,release_ready,continue_testing,not_release_ready
+efficientad,5,0,0,2,3
+padim,20,4,0,0,20
+patchcore,20,6,3,13,4

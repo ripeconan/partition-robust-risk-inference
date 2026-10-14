@@ -1,0 +1,376 @@
+{
+  "date": "2026-10-14",
+  "python": "3.10.12 (main, Mar 22 2024, 16:50:05) [GCC 11.4.0]",
+  "platform": "Linux-5.15.0-113-generic-x86_64-with-glibc2.35",
+  "hostname": "server501",
+  "numpy": "2.2.6",
+  "scipy": "1.15.3",
+  "elapsed_seconds": 0.9530281773768365,
+  "script_sha256": "43b4bbee0fd8cc5c0ca2466c720c1cd3e8fdddea31146a086850bb56fee70b5e",
+  "score_bundle_manifest": {
+    "files": {
+      "run_manifest.jsonl": {
+        "bytes": 2204850,
+        "sha256": "7e2c318be247802bc623709637d1ab1fe648a120df36160bce07c83518ee276b"
+      },
+      "run_scores.npz": {
+        "bytes": 3685664,
+        "sha256": "0e9f046f6812c888247cf5105643bd6362aabedf2bfba02d36de5f0df8d33c2a"
+      }
+    },
+    "derived_metric_cells": 2414,
+    "runs": 815,
+    "schema_version": 1,
+    "source_roots": [
+      "outputs/fidelity"
+    ]
+  },
+  "geometry": {
+    "configurations": 26523,
+    "attainable_triples": 53789,
+    "mismatches": 0,
+    "max_frames": 16,
+    "max_cap": 6
+  },
+  "vote_summary": [
+    {
+      "q": 1,
+      "cells": 120,
+      "mean_count_width": 2.35,
+      "robust_C": 0,
+      "robust_V": 64,
+      "robust_U": 56,
+      "mapped_C": 0,
+      "mapped_V": 84,
+      "mapped_U": 36,
+      "contradictions": 0
+    },
+    {
+      "q": 2,
+      "cells": 120,
+      "mean_count_width": 2.308333333333333,
+      "robust_C": 0,
+      "robust_V": 52,
+      "robust_U": 68,
+      "mapped_C": 0,
+      "mapped_V": 67,
+      "mapped_U": 53,
+      "contradictions": 0
+    },
+    {
+      "q": 3,
+      "cells": 120,
+      "mean_count_width": 2.0833333333333335,
+      "robust_C": 0,
+      "robust_V": 33,
+      "robust_U": 87,
+      "mapped_C": 0,
+      "mapped_V": 54,
+      "mapped_U": 66,
+      "contradictions": 0
+    },
+    {
+      "q": 4,
+      "cells": 120,
+      "mean_count_width": 2.0,
+      "robust_C": 0,
+      "robust_V": 25,
+      "robust_U": 95,
+      "mapped_C": 0,
+      "mapped_V": 31,
+      "mapped_U": 89,
+      "contradictions": 0
+    },
+    {
+      "q": 5,
+      "cells": 120,
+      "mean_count_width": 2.05,
+      "robust_C": 0,
+      "robust_V": 9,
+      "robust_U": 111,
+      "mapped_C": 0,
+      "mapped_V": 13,
+      "mapped_U": 107,
+      "contradictions": 0
+    }
+  ],
+  "recovery_summary": [
+    {
+      "q": 1,
+      "fraction": 0,
+      "rows": 2400,
+      "mean_known_items": 0.0,
+      "mean_count_width": 2.35,
+      "mean_bound_width": 0.6509138088820272,
+      "mean_violated_cells_per_mask": 64.0,
+      "mean_certified_cells_per_mask": 0.0,
+      "mean_unresolved_cells_per_mask": 56.0
+    },
+    {
+      "q": 1,
+      "fraction": 0.25,
+      "rows": 2400,
+      "mean_known_items": 1.625,
+      "mean_count_width": 1.8,
+      "mean_bound_width": 0.6150714438232651,
+      "mean_violated_cells_per_mask": 73.55,
+      "mean_certified_cells_per_mask": 0.0,
+      "mean_unresolved_cells_per_mask": 46.45
+    },
+    {
+      "q": 1,
+      "fraction": 0.5,
+      "rows": 2400,
+      "mean_known_items": 3.75,
+      "mean_count_width": 1.0425,
+      "mean_bound_width": 0.5511871379857065,
+      "mean_violated_cells_per_mask": 80.2,
+      "mean_certified_cells_per_mask": 0.0,
+      "mean_unresolved_cells_per_mask": 39.8
+    },
+    {
+      "q": 1,
+      "fraction": 0.75,
+      "rows": 2400,
+      "mean_known_items": 5.625,
+      "mean_count_width": 0.41791666666666666,
+      "mean_bound_width": 0.4959380178555511,
+      "mean_violated_cells_per_mask": 83.2,
+      "mean_certified_cells_per_mask": 0.0,
+      "mean_unresolved_cells_per_mask": 36.8
+    },
+    {
+      "q": 1,
+      "fraction": 1,
+      "rows": 2400,
+      "mean_known_items": 8.0,
+      "mean_count_width": 0.0,
+      "mean_bound_width": 0.4518144329560143,
+      "mean_violated_cells_per_mask": 84.0,
+      "mean_certified_cells_per_mask": 0.0,
+      "mean_unresolved_cells_per_mask": 36.0
+    },
+    {
+      "q": 2,
+      "fraction": 0,
+      "rows": 2400,
+      "mean_known_items": 0.0,
+      "mean_count_width": 2.308333333333333,
+      "mean_bound_width": 0.628974632722536,
+      "mean_violated_cells_per_mask": 52.0,
+      "mean_certified_cells_per_mask": 0.0,
+      "mean_unresolved_cells_per_mask": 68.0
+    },
+    {
+      "q": 2,
+      "fraction": 0.25,
+      "rows": 2400,
+      "mean_known_items": 1.625,
+      "mean_count_width": 1.7254166666666666,
+      "mean_bound_width": 0.5914627152354394,
+      "mean_violated_cells_per_mask": 56.8,
+      "mean_certified_cells_per_mask": 0.0,
+      "mean_unresolved_cells_per_mask": 63.2
+    },
+    {
+      "q": 2,
+      "fraction": 0.5,
+      "rows": 2400,
+      "mean_known_items": 3.75,
+      "mean_count_width": 1.015,
+      "mean_bound_width": 0.5366633432922229,
+      "mean_violated_cells_per_mask": 63.35,
+      "mean_certified_cells_per_mask": 0.0,
+      "mean_unresolved_cells_per_mask": 56.65
+    },
+    {
+      "q": 2,
+      "fraction": 0.75,
+      "rows": 2400,
+      "mean_known_items": 5.625,
+      "mean_count_width": 0.43,
+      "mean_bound_width": 0.4795741035463594,
+      "mean_violated_cells_per_mask": 64.75,
+      "mean_certified_cells_per_mask": 0.0,
+      "mean_unresolved_cells_per_mask": 55.25
+    },
+    {
+      "q": 2,
+      "fraction": 1,
+      "rows": 2400,
+      "mean_known_items": 8.0,
+      "mean_count_width": 0.0,
+      "mean_bound_width": 0.436752050722745,
+      "mean_violated_cells_per_mask": 67.0,
+      "mean_certified_cells_per_mask": 0.0,
+      "mean_unresolved_cells_per_mask": 53.0
+    },
+    {
+      "q": 3,
+      "fraction": 0,
+      "rows": 2400,
+      "mean_known_items": 0.0,
+      "mean_count_width": 2.0833333333333335,
+      "mean_bound_width": 0.601246244461599,
+      "mean_violated_cells_per_mask": 33.0,
+      "mean_certified_cells_per_mask": 0.0,
+      "mean_unresolved_cells_per_mask": 87.0
+    },
+    {
+      "q": 3,
+      "fraction": 0.25,
+      "rows": 2400,
+      "mean_known_items": 1.625,
+      "mean_count_width": 1.6104166666666666,
+      "mean_bound_width": 0.567076127722519,
+      "mean_violated_cells_per_mask": 34.2,
+      "mean_certified_cells_per_mask": 0.0,
+      "mean_unresolved_cells_per_mask": 85.8
+    },
+    {
+      "q": 3,
+      "fraction": 0.5,
+      "rows": 2400,
+      "mean_known_items": 3.75,
+      "mean_count_width": 0.9754166666666667,
+      "mean_bound_width": 0.5162413073952581,
+      "mean_violated_cells_per_mask": 42.45,
+      "mean_certified_cells_per_mask": 0.0,
+      "mean_unresolved_cells_per_mask": 77.55
+    },
+    {
+      "q": 3,
+      "fraction": 0.75,
+      "rows": 2400,
+      "mean_known_items": 5.625,
+      "mean_count_width": 0.38,
+      "mean_bound_width": 0.4507604606347358,
+      "mean_violated_cells_per_mask": 49.85,
+      "mean_certified_cells_per_mask": 0.0,
+      "mean_unresolved_cells_per_mask": 70.15
+    },
+    {
+      "q": 3,
+      "fraction": 1,
+      "rows": 2400,
+      "mean_known_items": 8.0,
+      "mean_count_width": 0.0,
+      "mean_bound_width": 0.4120998255475707,
+      "mean_violated_cells_per_mask": 54.0,
+      "mean_certified_cells_per_mask": 0.0,
+      "mean_unresolved_cells_per_mask": 66.0
+    },
+    {
+      "q": 4,
+      "fraction": 0,
+      "rows": 2400,
+      "mean_known_items": 0.0,
+      "mean_count_width": 2.0,
+      "mean_bound_width": 0.5939408876689637,
+      "mean_violated_cells_per_mask": 25.0,
+      "mean_certified_cells_per_mask": 0.0,
+      "mean_unresolved_cells_per_mask": 95.0
+    },
+    {
+      "q": 4,
+      "fraction": 0.25,
+      "rows": 2400,
+      "mean_known_items": 1.625,
+      "mean_count_width": 1.5266666666666666,
+      "mean_bound_width": 0.555725725722776,
+      "mean_violated_cells_per_mask": 25.0,
+      "mean_certified_cells_per_mask": 0.0,
+      "mean_unresolved_cells_per_mask": 95.0
+    },
+    {
+      "q": 4,
+      "fraction": 0.5,
+      "rows": 2400,
+      "mean_known_items": 3.75,
+      "mean_count_width": 0.86125,
+      "mean_bound_width": 0.4954515575333112,
+      "mean_violated_cells_per_mask": 25.9,
+      "mean_certified_cells_per_mask": 0.0,
+      "mean_unresolved_cells_per_mask": 94.1
+    },
+    {
+      "q": 4,
+      "fraction": 0.75,
+      "rows": 2400,
+      "mean_known_items": 5.625,
+      "mean_count_width": 0.36791666666666667,
+      "mean_bound_width": 0.4485385851735368,
+      "mean_violated_cells_per_mask": 27.15,
+      "mean_certified_cells_per_mask": 0.0,
+      "mean_unresolved_cells_per_mask": 92.85
+    },
+    {
+      "q": 4,
+      "fraction": 1,
+      "rows": 2400,
+      "mean_known_items": 8.0,
+      "mean_count_width": 0.0,
+      "mean_bound_width": 0.41366512631239144,
+      "mean_violated_cells_per_mask": 31.0,
+      "mean_certified_cells_per_mask": 0.0,
+      "mean_unresolved_cells_per_mask": 89.0
+    },
+    {
+      "q": 5,
+      "fraction": 0,
+      "rows": 2400,
+      "mean_known_items": 0.0,
+      "mean_count_width": 2.05,
+      "mean_bound_width": 0.57924825705249,
+      "mean_violated_cells_per_mask": 9.0,
+      "mean_certified_cells_per_mask": 0.0,
+      "mean_unresolved_cells_per_mask": 111.0
+    },
+    {
+      "q": 5,
+      "fraction": 0.25,
+      "rows": 2400,
+      "mean_known_items": 1.625,
+      "mean_count_width": 1.5095833333333333,
+      "mean_bound_width": 0.5304387346298228,
+      "mean_violated_cells_per_mask": 9.25,
+      "mean_certified_cells_per_mask": 0.0,
+      "mean_unresolved_cells_per_mask": 110.75
+    },
+    {
+      "q": 5,
+      "fraction": 0.5,
+      "rows": 2400,
+      "mean_known_items": 3.75,
+      "mean_count_width": 0.9325,
+      "mean_bound_width": 0.48426607216900086,
+      "mean_violated_cells_per_mask": 10.4,
+      "mean_certified_cells_per_mask": 0.0,
+      "mean_unresolved_cells_per_mask": 109.6
+    },
+    {
+      "q": 5,
+      "fraction": 0.75,
+      "rows": 2400,
+      "mean_known_items": 5.625,
+      "mean_count_width": 0.37333333333333335,
+      "mean_bound_width": 0.4239454976771257,
+      "mean_violated_cells_per_mask": 11.25,
+      "mean_certified_cells_per_mask": 0.0,
+      "mean_unresolved_cells_per_mask": 108.75
+    },
+    {
+      "q": 5,
+      "fraction": 1,
+      "rows": 2400,
+      "mean_known_items": 8.0,
+      "mean_count_width": 0.0,
+      "mean_bound_width": 0.38987279315391593,
+      "mean_violated_cells_per_mask": 13.0,
+      "mean_certified_cells_per_mask": 0.0,
+      "mean_unresolved_cells_per_mask": 107.0
+    }
+  ],
+  "mask_trials": 20,
+  "physical_new_items": 0
+}

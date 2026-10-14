@@ -1,0 +1,18 @@
+{
+  "files": {
+    "run_manifest.jsonl": {
+      "bytes": 2204850,
+      "sha256": "7e2c318be247802bc623709637d1ab1fe648a120df36160bce07c83518ee276b"
+    },
+    "run_scores.npz": {
+      "bytes": 3685664,
+      "sha256": "0e9f046f6812c888247cf5105643bd6362aabedf2bfba02d36de5f0df8d33c2a"
+    }
+  },
+  "derived_metric_cells": 2414,
+  "runs": 815,
+  "schema_version": 1,
+  "source_roots": [
+    "outputs/fidelity"
+  ]
+}
