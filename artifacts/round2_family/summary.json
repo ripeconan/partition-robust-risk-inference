@@ -1,0 +1,18 @@
+{
+  "hostname": "server501",
+  "python": "3.10.12 (main, Mar 22 2024, 16:50:05) [GCC 11.4.0]",
+  "numpy": "2.2.6",
+  "scipy": "1.15.3",
+  "cpu_only": true,
+  "threads": "2",
+  "source_sha256": "d0804b6238eb9a988150c7f447b1aaf1cddb3d7abf0ef0611d1da48ad6ab0ba5",
+  "script_sha256": "c2f514ac7bed1600548e0e9dcb515c8e30b99afd2fd349b6773716a685a97c53",
+  "family_manifest_sha256": "83a11acf5eaa681374ba1b7fb1e09d35c73886787ec0bf9a3fb28459646273ed",
+  "adjusted_rows": 2160,
+  "family_memberships": 720,
+  "cp_endpoint_cases": 6188,
+  "cp_check_failures": 0,
+  "elapsed_seconds": 0.39021014189347625,
+  "peak_rss_kib": 120872,
+  "prospective_registration": false
+}

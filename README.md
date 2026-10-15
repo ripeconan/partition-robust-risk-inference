@@ -6,9 +6,17 @@ This package accompanies **Partition-Robust Risk Inference with Incomplete Multi
 
 Repository: https://github.com/ripeconan/partition-robust-risk-inference
 
-Version **v1.1.0**, released 2026-10-15: https://github.com/ripeconan/partition-robust-risk-inference/releases/tag/v1.1.0
+Version **v1.2.0**, released 2026-10-15: https://github.com/ripeconan/partition-robust-risk-inference/releases/tag/v1.2.0
 
 Use the attached `IJAR_Reproduction_Code.zip` and its SHA-256 checksum for the exact paper snapshot. `CITATION.cff` and `CITATION.bib` provide citation metadata. `DATA_DESCRIPTION.md` describes the included processed data and their provenance. This is a research artifact release, not a claim of journal acceptance.
+
+## Version 1.2 complete-family analysis
+
+Run `python round2_family_analysis.py` to reproduce the simultaneous sensitivity results from the frozen `artifacts/strengthening/real_comparisons.csv` input. It uses NumPy and SciPy only; the versions are pinned in `requirements-analysis-lock.txt`. On the recorded Python 3.10.12/i9-13900K system with two threads, the process took about 0.65 seconds and 118 MiB peak RSS, with no GPU. This is a separate command from the retained headline workflow.
+
+`ROUND2_PROTOCOL.txt` defines complete families of 120 configurations at the primary vote and 600 configuration-vote targets at all five votes. The fixed risk requirement and total error budget are both 5%. These are retrospective sensitivity analyses of already observed scores, not prospective registration. `artifacts/round2_family/family_membership.csv` lists every target before adjusted verdict computation; the other files contain 2,160 adjusted rows and all summaries. Primary-vote violated counts are 35/62/63 for aggregate/view-margin/mapped information with the 120-target correction, and 32/61/62 with the 600-target correction. No target is omitted because of its result.
+
+The same program checks the explicit uniform CP endpoint enclosure in 6,188 count/sample-size/error-level cases. Source and input hashes and execution resources are recorded in `artifacts/round2_family/summary.json`; `round2_run.log` preserves the completed run. The new script does not re-estimate scores, change integer endpoints or retrain detectors. Both prior releases remain available.
 
 ## Version 1.1 strengthening analyses
 

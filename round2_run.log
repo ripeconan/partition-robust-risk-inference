@@ -1,0 +1,62 @@
+{
+  "hostname": "server501",
+  "python": "3.10.12 (main, Mar 22 2024, 16:50:05) [GCC 11.4.0]",
+  "numpy": "2.2.6",
+  "scipy": "1.15.3",
+  "cpu_only": true,
+  "threads": "2",
+  "source_sha256": "d0804b6238eb9a988150c7f447b1aaf1cddb3d7abf0ef0611d1da48ad6ab0ba5",
+  "script_sha256": "c2f514ac7bed1600548e0e9dcb515c8e30b99afd2fd349b6773716a685a97c53",
+  "family_manifest_sha256": "83a11acf5eaa681374ba1b7fb1e09d35c73886787ec0bf9a3fb28459646273ed",
+  "adjusted_rows": 2160,
+  "family_memberships": 720,
+  "cp_endpoint_cases": 6188,
+  "cp_check_failures": 0,
+  "elapsed_seconds": 0.39021014189347625,
+  "peak_rss_kib": 120872,
+  "prospective_registration": false
+}
+FAMILY_SUMMARY
+family,family_size,q,method,cells,C,V,U
+primary_vote_all_configurations,120,1,aggregate_CP,120,0,35,85
+primary_vote_all_configurations,120,1,view_margins_CP,120,0,62,58
+primary_vote_all_configurations,120,1,mapped_CP,120,0,63,57
+all_configuration_vote_targets,600,1,aggregate_CP,120,0,32,88
+all_configuration_vote_targets,600,1,view_margins_CP,120,0,61,59
+all_configuration_vote_targets,600,1,mapped_CP,120,0,62,58
+all_configuration_vote_targets,600,2,aggregate_CP,120,0,25,95
+all_configuration_vote_targets,600,2,view_margins_CP,120,0,44,76
+all_configuration_vote_targets,600,2,mapped_CP,120,0,52,68
+all_configuration_vote_targets,600,3,aggregate_CP,120,0,25,95
+all_configuration_vote_targets,600,3,view_margins_CP,120,0,32,88
+all_configuration_vote_targets,600,3,mapped_CP,120,0,34,86
+all_configuration_vote_targets,600,4,aggregate_CP,120,0,14,106
+all_configuration_vote_targets,600,4,view_margins_CP,120,0,19,101
+all_configuration_vote_targets,600,4,mapped_CP,120,0,22,98
+all_configuration_vote_targets,600,5,aggregate_CP,120,0,6,114
+all_configuration_vote_targets,600,5,view_margins_CP,120,0,6,114
+all_configuration_vote_targets,600,5,mapped_CP,120,0,6,114
+
+	Command being timed: "/usr/bin/python3 -u round2_family_analysis.py"
+	User time (seconds): 0.76
+	System time (seconds): 0.04
+	Percent of CPU this job got: 124%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.65
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 120872
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 46
+	Minor (reclaiming a frame) page faults: 21313
+	Voluntary context switches: 83
+	Involuntary context switches: 9
+	Swaps: 0
+	File system inputs: 3368
+	File system outputs: 832
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

@@ -1,0 +1,31 @@
+IJAR second revision: complete-family simultaneous sensitivity
+Protocol fixed 2026-10-15 before executing this added analysis. The frozen
+single-cell results were already seen; this is a retrospective sensitivity
+analysis, not a prospectively registered verification experiment.
+
+Inputs: unchanged artifacts/strengthening/real_comparisons.csv (all cells).
+Fixed target risk alpha=0.05 and family error budget delta=0.05.
+Families: (A) all 120 original configurations at primary vote q=1;
+(B) all 120 configurations at all five votes, 600 targets. No outcome-based
+selection of cells, seeds, categories or methods. Freeze the exact family
+membership before computing adjusted verdicts and release family manifests.
+
+For each target use one-sided CP bounds at delta/M. Report all C/V/U counts
+for aggregate counts, view margins and mapped counts, for each q and family.
+For fixed alpha, exactly one error direction can be false at the true risk;
+a union bound over M targets controls any wrong directional decision.
+All truthful metadata envelopes contain the same mapped CP interval, so
+simultaneous reporting of the three information levels is covered by the
+same target-wise events, without multiplying M by the method count.
+No cross-target independence is assumed. Different alpha values would need
+their own family accounting; this analysis fixes alpha=0.05.
+
+Additional numerical checks: verify the explicit uniform CP-versus-Hoeffding
+endpoint enclosure for N=1,2,4,8,12,30,60,120,300,1000 and delta=.05,.01,
+.05/120,.05/600, all k=0,...,N. This supports a direct analytic proof; it is
+not the proof itself. Preserve integer endpoints, check truth containment,
+nesting, and that adjusted resolved cells are subsets of marginal ones.
+
+Execution: inner/server501, CPU only, at most two computational threads,
+nice +10, one persistent SSH connection. Expected below 512 MiB RAM and
+several minutes; no detector training, GPU, new labels or new physical items.
