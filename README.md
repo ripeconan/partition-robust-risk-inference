@@ -6,9 +6,25 @@ This package accompanies **Partition-Robust Risk Inference with Incomplete Multi
 
 Repository: https://github.com/ripeconan/partition-robust-risk-inference
 
-Version **v1.0.0**, released 2026-10-14: https://github.com/ripeconan/partition-robust-risk-inference/releases/tag/v1.0.0
+Version **v1.1.0**, released 2026-10-15: https://github.com/ripeconan/partition-robust-risk-inference/releases/tag/v1.1.0
 
 Use the attached `IJAR_Reproduction_Code.zip` and its SHA-256 checksum for the exact paper snapshot. `CITATION.cff` and `CITATION.bib` provide citation metadata. `DATA_DESCRIPTION.md` describes the included processed data and their provenance. This is a research artifact release, not a claim of journal acceptance.
+
+## Version 1.1 strengthening analyses
+
+Run `python strengthening_analysis.py` for the aggregate/MILP/LP, retained-view-margin and Hoeffding comparisons, exact decision-power grid and identifier-recovery frontier. Run `python plot_strengthening.py` to render the two additional figures. This is a separate command from the retained baseline `reproduce_headline.py` workflow.
+
+`STRENGTHENING_PROTOCOL.txt` records the initial protocol and explicit boundary/theory amendments. `artifacts/strengthening/` contains 600 aggregate threshold checks (15 exact-tail ties), 364 independently enumerated binary-margin cases, 600 real configuration-vote comparisons, 16,800 method-budget rows, 4,320 exact-power rows and 48 frontier rows. These rows reuse observations and do not increase the physical sample size. All reported integer endpoint comparisons agree. The original, corrected and final execution logs are retained.
+
+The final analysis used Python 3.10.12, NumPy 2.2.6 and SciPy 1.15.3 on an i9-13900K CPU, with two threads, approximately 3.7 seconds process time and 128 MiB peak RSS. No GPU or detector retraining is needed. `requirements-analysis-lock.txt` pins the new numerical analysis dependencies; the original `requirements-lock.txt` records the earlier plotting/reproduction environment. Runtime and solver timings depend on the machine. The existing 21 unit tests also pass under the new analysis environment.
+
+On Linux, a bounded CPU invocation is:
+
+```bash
+OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=2 MKL_NUM_THREADS=2 NUMEXPR_NUM_THREADS=2 CUDA_VISIBLE_DEVICES='' python strengthening_analysis.py
+```
+
+The older v1.0.0 release remains available and immutable. Use v1.1.0 for the revised manuscript containing sharp aggregate error curves, the recovery frontier and view-margin comparisons.
 
 ## IJAR extension
 

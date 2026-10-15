@@ -1,0 +1,58 @@
+Locked 2026-10-15 before execution of strengthening_analysis.py.
+CPU only, inner/server501, <=2 threads and nice +10, one persistent SSH connection.
+Resource envelope: estimated <4 GiB RAM, <1 GiB outputs. Pilot first; inspect actual
+time/memory before full execution. Do not touch GPU processes or shared environments.
+Frozen input: the SHA256-verified v1.0.0 815-run score bundle. No detector training.
+
+A. Independent same-information comparator: integer type counts x_(s,a),
+sum x=N, sum s*x=F, sum a*x=A, x>=0 integer. Optimize rejected-item count
+sum 1[a>=q]*x. Compare to analytic endpoints on all 120 AD2 configurations
+and q=1..5. LP relaxation and Hoeffding propagation are valid alternatives;
+full mapping uses strictly more information. Do not claim numerical superiority
+over an exact optimizer that solves the same problem. Time both count calculations.
+
+B. Additional usable metadata: for complete view designs, retain alarm totals
+for each lighting condition, but hide all item identities. Optimize over binary
+view-pattern counts with fixed integer margins. Also use the actual design cap
+as a separate control so that any gain is not confused with tightening r=5 to 3.
+All configurations, q=1..5, and alpha=.05,.10,.20,.30 are retained. The larger
+risk budgets expose the two directional decisions; they are not recommended
+deployment requirements. Verify grouping containment, nesting and agreement.
+
+C. Statistical threshold theorem: complete r-view designs with IID item alarm
+counts S_i in {0,...,r}, target P(S_i>=q). Check exact least-favourable sizes
+for all n=10,30,60,120,300, r=1..5, q=1..r and alpha=.01,.05,.1,.2,.3.
+Verify that enlarging either monotone deterministic rejection region by one
+aggregate-alarm count violates the nominal directional error bound. This is
+restricted threshold optimality, not general optimality among randomized tests.
+
+D. Exact power and coverage, using probability convolution (not Monte Carlo):
+n=30,60,120,300,1000; r=3,5; every q<=r; true risk .01,.03,.05,.06,.1,.2;
+budgets .05,.1. Sparse mechanisms have S=0 or q; dense S=q-1 or r; spread
+distributes mass uniformly within non-rejection and rejection alarm counts.
+Compare aggregate CP, aggregate Hoeffding and full mapping CP. No frame-naive
+method is a primary comparator. Report all cells, including low power.
+
+E. Independent enumeration: all binary matrices n<=3,r<=3, grouped by column
+margins, compared with integer optimizer endpoints for every q. This finite
+check verifies implementation, and does not replace proofs or establish novelty.
+
+Stop on checksum mismatch, infeasible actual metadata, optimizer failure,
+analytic/optimization discrepancy, missed true counts, or false nominal control.
+Keep failure logs. Post-result changes require a dated correction and rerun.
+Public v1.0.0 remains frozen; this workspace is a prospective separate version.
+
+Proof-audit correction, 2026-10-15 after initial numerical checks: exact
+binomial-tail ties distinguish the manuscript's strict L>alpha convention from
+inclusive size-calibrated optimal thresholds. Add n=1,2,3 boundary cases and
+report these differences rather than claim unqualified equality. This is a
+mathematical boundary correction, not a change selected for favorable power.
+The original pilot/full logs and results are retained before the corrected run.
+
+Theory-driven extension, 2026-10-15, fixed before frontier results: prove the
+large-N interval [ell,u] and its random-recovery contraction
+[f*p+(1-f)*ell, f*p+(1-f)*u]. Evaluate exact finite-N rates for r=5,q=1,
+sparse p=.10 and dense p=.03, alpha=.05; n=60,300,1000,3000 and recovered
+fractions 0,.25,.5,.75,.9,1. These cover opposite directions with predicted
+critical fractions .375 and 5/6. Keep all rows; no new real items are implied.
+This amendment tests a newly derived consequence, and is labeled as such.

@@ -1,0 +1,26 @@
+test_both_component_claims_authorize_release (test_core.DualRiskGateTests) ... ok
+test_fpr_only_success_does_not_authorize_release (test_core.DualRiskGateTests) ... ok
+test_one_missed_defect_requires_more_evidence (test_core.DualRiskGateTests) ... ok
+test_additional_items (test_core.ExactInferenceTests) ... ok
+test_boundary_verdicts (test_core.ExactInferenceTests) ... ok
+test_invalid_counts (test_core.ExactInferenceTests) ... ok
+test_mde_decreases_with_sample_size (test_core.ExactInferenceTests) ... ok
+test_upper_bound_monotonicity (test_core.ExactInferenceTests) ... ok
+test_zero_event_boundaries (test_core.ExactInferenceTests) ... ok
+test_complete_family (test_core.FamilyValidationTests) ... ok
+test_incomplete_family (test_core.FamilyValidationTests) ... ok
+test_ad2_multiseed_counts (test_core.PartitionRobustTests) ... ok
+test_feasible_set_is_sharp_by_exhaustive_enumeration (test_core.PartitionRobustTests) ... ok
+test_high_alarm_rate_is_robustly_violated (test_core.PartitionRobustTests) ... ok
+test_invalid_item_count (test_core.PartitionRobustTests) ... ok
+test_invalid_vote_threshold (test_core.PartitionRobustTests) ... ok
+test_known_item_count_contains_observed_ad2_grouping (test_core.PartitionRobustTests) ... ok
+test_q_of_r_feasible_set_is_sharp_by_dynamic_enumeration (test_core.PartitionRobustTests) ... ok
+test_q_of_r_reduces_uncertainty_relative_to_any_frame (test_core.PartitionRobustTests) ... ok
+test_zero_alarm_capacity_with_unknown_item_count (test_core.PartitionRobustTests) ... ok
+test_production_bundle_is_complete_and_self_consistent (test_core.ReleasedBundleTests) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 1.559s
+
+OK

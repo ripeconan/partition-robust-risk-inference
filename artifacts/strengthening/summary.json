@@ -1,0 +1,52 @@
+{
+  "pilot": false,
+  "hostname": "server501",
+  "python": "3.10.12 (main, Mar 22 2024, 16:50:05) [GCC 11.4.0]",
+  "scipy": "1.15.3",
+  "numpy": "2.2.6",
+  "cpu_only": true,
+  "threads": "2",
+  "script_sha256": "9d0fcbfa9bdb1955a6bac6ef574a4375dc30a0b13528a986a56307bbf5680523",
+  "thresholds": {
+    "threshold_cases": 600,
+    "invalid_enlargements": 0,
+    "exact_boundary_tie_cases": 15
+  },
+  "geometry": {
+    "binary_matrix_margin_cases": 364,
+    "mismatches": 0
+  },
+  "real": {
+    "configurations": 120,
+    "vote_checks": 600,
+    "rows": 16800,
+    "incomplete_view_design_runs": [],
+    "solver_mismatches": 0,
+    "median_closed_seconds": 1.4486722648143768e-06,
+    "median_milp_seconds": 0.0013005109503865242
+  },
+  "power": {
+    "rows": 4320,
+    "mechanisms": 3,
+    "n_values": [
+      30,
+      60,
+      120,
+      300,
+      1000
+    ],
+    "method": "exact convolution, not Monte Carlo"
+  },
+  "recovery_frontier": {
+    "rows": 48,
+    "n_values": [
+      60,
+      300,
+      1000,
+      3000
+    ],
+    "method": "exact binomial summation"
+  },
+  "elapsed_seconds": 3.465510576032102,
+  "peak_rss_kib": 130376
+}

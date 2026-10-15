@@ -7,9 +7,9 @@ authors:
     given-names: Ran
     affiliation: Hangzhou Dianzi University
     orcid: "https://orcid.org/0000-0003-0188-3434"
-version: 1.0.0
-date-released: 2026-10-14
-url: "https://github.com/ripeconan/partition-robust-risk-inference/releases/tag/v1.0.0"
+version: 1.1.0
+date-released: 2026-10-15
+url: "https://github.com/ripeconan/partition-robust-risk-inference/releases/tag/v1.1.0"
 repository-code: "https://github.com/ripeconan/partition-robust-risk-inference"
 license: MIT
 keywords:
